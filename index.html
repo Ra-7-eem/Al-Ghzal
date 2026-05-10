@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="شركة الغزال - منتجات غذائية فلسطينية فاخرة">
+    <title>الغزال | Palestinian Premium Food</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="logo.png" alt="الغزال" class="logo-img">
+            </a>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">من نحن</a></li>
+                <li><a href="#products" class="nav-link">المنتجات</a></li>
+                <li><a href="#recipes" class="nav-link">الوصفات</a></li>
+                <li><a href="#certifications" class="nav-link">شهاداتنا</a></li>
+                <li><a href="#careers" class="nav-cta">الانضمام للفريق</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Premium -->
+    <section class="hero-premium" id="hero">
+        <div class="hero-premium-container">
+            <!-- Background Elements -->
+            <div class="hero-bg-elements">
+                <div class="hero-circle-gold"></div>
+                <div class="hero-circle-gold-small"></div>
+                <div class="hero-accent-line"></div>
+            </div>
+            
+            <!-- Content Grid -->
+            <div class="hero-grid">
+                <!-- Left Side - Visual Element -->
+                <div class="hero-visual">
+                    <div class="hero-visual-container">
+                        <!-- Decorative Circle -->
+                        <div class="visual-circle-bg"></div>
+                        
+                        <!-- Main Image -->
+                        <div class="hero-image-wrapper">
+                            <img src="HeroIMG.png" alt="شاحنة توصيل الغزال" class="hero-main-image">
+                        </div>
+                        
+                        <!-- Floating Elements -->
+                        <div class="floating-element element-1">
+                            <div class="small-circle"></div>
+                        </div>
+                        <div class="floating-element element-2">
+                            <div class="small-circle"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Text Content -->
+                <div class="hero-content">
+                    <!-- Background Video -->
+                    <div class="hero-video-bg">
+                        <video autoplay muted loop playsinline class="hero-bg-video">
+                            <source src="HeroGIF.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <div class="hero-content-inner">
+                        <h1 class="hero-main-title">
+                            <span class="hero-brand">الغزال</span>
+                            <span class="hero-highlight">طعم الأصالة في كل طبق سلطة وحمص</span>
+                        </h1>
+                        
+                        <!-- Buttons -->
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary hero-btn-primary">
+                                <span>اطلب الآن</span>
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                            <a href="#products" class="btn btn-secondary hero-btn-secondary">
+                                <span>شاهد منتجاتنا</span>
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </div>
+                        
+                        <!-- Trust Features -->
+                        <div class="hero-features">
+                            <div class="hero-feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>مكونات طبيعية 100%</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="hero-feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>معايير عالمية</h4>
+                                </div>
+                            </div>
+                            
+                            <div class="hero-feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>توصيل سريع</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title about-title"><span class="about-title-highlight">شركة الغزال</span> : إرث عريق وريادة متجددة في عالم المنتجات الغذائية</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph about-paragraph-lead">
+                        منذ تأسيسها عام 1989 في طولكرم، استطاعت شركة الغزال أن ترسّخ مكانتها كواحدة من أبرز الشركات الفلسطينية المتخصصة في تصنيع وتسويق المنتجات الغذائية عالية الجودة.
+                    </p>
+                    <p class="about-paragraph">
+                        وعلى مدار أكثر من ثلاثة عقود من الخبرة، نجحت الشركة في بناء علامة تجارية ترتبط بالثقة، الجودة، والابتكار، من خلال تقديم منتجات تلبي تطلعات المستهلك وتواكب أعلى معايير التصنيع الحديثة.
+                    </p>
+                    <p class="about-paragraph">
+                        واليوم، تواصل شركة الغزال مسيرتها بثبات، ملتزمة بتقديم منتجات غذائية تجمع بين الجودة الأصيلة والتطوير المستمر، لتبقى اسمًا رائدًا في السوق الفلسطيني.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>خبرة منذ 1989</h3>
+                            <p>جذور فلسطينية عميقة ومسيرة راسخة</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <h3>ثقة وجودة</h3>
+                            <p>علامة تبني ثقتها مع كل منتج يصل إلى العميل</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-rotate-right"></i>
+                            <h3>ابتكار مستمر</h3>
+                            <p>تطوير دائم يواكب أعلى معايير التصنيع الحديثة</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section - Cinematic Reveal -->
+    <section class="section products-premium" id="products">
+        <div class="container">
+            <div class="products-hero-intro scroll-fade visible">
+                <div class="products-hero-stage">
+                    <img src="products/products.png" alt="صورة منتجات الغزال الرئيسية" class="products-hero-image" loading="eager" onerror="this.onerror=null;this.src='products/Gemini_Generated_Image_4h0tzp4h0tzp4h0t.png'">
+                    <button id="productsRevealBtn" class="btn btn-primary products-reveal-btn" type="button">اكتشف المزيد</button>
+                </div>
+            </div>
+
+            <div class="products-reveal" id="productsReveal" aria-hidden="true">
+                <div class="section-header products-header scroll-fade">
+                    <h2 class="section-title products-section-title">منتجاتنا</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-description">تقدّم شركة الغزال تشكيلة مميزة من السلطات والحمص المُحضّر بأعلى معايير الجودة، لتمنح المستهلك طعماً أصيلاً يجمع بين النكهة الفلسطينية الغنية والتحضير العصري المتقن.
+                        نصنع منتجاتنا بعناية لنقدّم تجربة طازجة، شهية، وجديرة بثقة كل مائدة فلسطينية..</p>
+                </div>
+
+                <div class="products-slider-wrapper scroll-fade">
+                    <div class="products-slider-shell">
+                        <button class="products-nav products-nav-prev" id="productsPrevBtn" type="button" aria-label="المنتج السابق" title="العودة للمنتج السابق">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+
+                        <div class="products-slider" id="productsSlider" tabindex="0" aria-label="معرض منتجات الغزال">
+                            <div class="products-track" id="productsTrack"></div>
+                        </div>
+
+                        <button class="products-nav products-nav-next" id="productsNextBtn" type="button" aria-label="المنتج التالي" title="الانتقال للمنتج التالي">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Desktop Bottom Navigation -->
+                    <div class="products-bottom-nav" aria-label="التنقل بين المنتجات">
+                        <button class="products-bottom-btn products-bottom-prev" id="productsBottomPrevBtn" type="button" aria-label="المنتج السابق">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="nav-label">السابق</span>
+                        </button>
+                        
+                        <div class="slider-dots" id="productsDots"></div>
+                        
+                        <button class="products-bottom-btn products-bottom-next" id="productsBottomNextBtn" type="button" aria-label="المنتج التالي">
+                            <span class="nav-label">التالي</span>
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            window.__ALGHZAL_PRODUCTS = [
+                {
+                    src: "products/IMG-20260508-WA0009.jpg",
+                    title: "سلطة التونة المشبعة",
+                    desc: "خيار صحي بلمسة فاخرة، يجمع بين القيمة الغذائية العالية والمذاق الاستثنائي الذي يرضي ذوقك."
+                },
+                {
+                    src: "products/IMG-20260508-WA0010.jpg",
+                    title: "المسبحة الشامية",
+                    desc: "نكهة تراثية عريقة تنقل لك عبق الشام الأصيل، بقوام غني ومتناغم يزين مائدتك بلمسة من الفخامة."
+                },
+                {
+                    src: "products/IMG-20260508-WA0011.jpg",
+                    title: "سلطة الملفوف الأبيض",
+                    desc: "توازن دقيق يجمع بين القرمشة المنعشة والطراوة، خيار طازج وخفيف يكمل وجباتك بأناقة ويضفي لمسة من الحيوية."
+                },
+                {
+                    src: "products/IMG-20260508-WA0012.jpg",
+                    title: "متبل الباذنجان المدخن",
+                    desc: "نكهة الشواء الأصيلة تتناغم مع القوام الكريمي الغني، لتقدم لك تجربة شرقية فاخرة تأسر الحواس وتثري مائدتك."
+                },
+                {
+                    src: "products/IMG-20260508-WA0013.jpg",
+                    title: "سلطة الذرة المميزة",
+                    desc: "حبات الذرة الذهبية المقرمشة ممزوجة بتتبيلتنا الخاصة، لتقدم لك مزيجاً مثالياً يضفي لمسة من الحيوية والمذاق الفريد على مائدتك."
+                }
+            ];
+        </script>
+    </section>
+
+    <!-- Recipes Section -->
+    <section class="section recipes" id="recipes">
+        <div class="container">
+            <div class="recipes-header scroll-fade">
+                <h2 class="recipes-title">الوصفات</h2>
+                <h3 class="recipes-subtitle">وجبات شهية لتستمتع بها جميع أفراد الأسرة!</h3>
+            </div>
+            
+            <div class="recipes-wrapper scroll-fade">
+                <div class="recipes-container">
+                    <div class="recipe-card" data-recipe="hummus_beetroot">
+                        <div class="recipe-time-badge">
+                            <i class="fas fa-clock"></i>
+                            <span>20 دقيقة</span>
+                        </div>
+                        <div class="recipe-image">
+                            <img src="recipes/IMG-20260509-WA0007.jpg" alt="حمص بالشمندر" loading="lazy">
+                        </div>
+                        <div class="recipe-info">
+                            <h3>حمص بالشمندر</h3>
+                            <p>كلاسيكي مع لمسة الشمندر لإطلالة ونكهة مميزة.</p>
+                            <button class="recipe-btn" data-recipe="hummus_beetroot">الحصول على وصفة</button>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-recipe="hummus_tahini">
+                        <div class="recipe-time-badge">
+                            <i class="fas fa-clock"></i>
+                            <span>10 دقيقة</span>
+                        </div>
+                        <div class="recipe-image">
+                            <img src="recipes/IMG-20260509-WA0008.jpg" alt="حمص بالطحينة" loading="lazy">
+                        </div>
+                        <div class="recipe-info">
+                            <h3>حمص بالطحينة</h3>
+                            <p>الوصفة الكلاسيكية الغنية بطحينة عالية الجودة.</p>
+                            <button class="recipe-btn" data-recipe="hummus_tahini">الحصول على وصفة</button>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-recipe="eggplant_fatteh">
+                        <div class="recipe-time-badge">
+                            <i class="fas fa-clock"></i>
+                            <span>15 دقيقة</span>
+                        </div>
+                        <div class="recipe-image">
+                            <img src="recipes/IMG-20260509-WA0009.jpg" alt="فتة متبل الباذنجان" loading="lazy">
+                        </div>
+                        <div class="recipe-info">
+                            <h3>فتة متبل الباذنجان</h3>
+                            <p>مزيج كريمي من المتبل واللبن يعطى قوامًا غنياً ومقرمشًا.</p>
+                            <button class="recipe-btn" data-recipe="eggplant_fatteh">الحصول على وصفة</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Horizontal Navigation -->
+                <div class="recipes-nav">
+                    <button class="recipes-nav-btn recipes-nav-prev" id="recipesPrevBtn" aria-label="الوصفة السابقة" title="السابق">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="slider-dots" id="recipesDots"></div>
+                    <button class="recipes-nav-btn recipes-nav-next" id="recipesNextBtn" aria-label="الوصفة التالية" title="التالي">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="recipes-pagination">
+                    <button class="dot active" data-index="0"></button>
+                    <button class="dot" data-index="1"></button>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats" id="stats">
+        <div class="container">
+            <div class="section-header stats-header scroll-fade">
+                <h2 class="section-title">الغزال بالأرقام</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-visual" aria-hidden="true">
+                        <div class="stat-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-title">نقطة بيع لمنتجاتنا</h3>
+                        <p class="stat-description">تشمل محلات السوبر ماركت والبقالة الصغيرة التي نوصل إليها منتجاتنا بشكل يومي.</p>
+                        <h4 class="stat-number" data-target="90" data-suffix="+">0+</h4>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-visual" aria-hidden="true">
+                        <div class="stat-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-title">شاحنة نقل وتسليم</h3>
+                        <p class="stat-description">تشكل شبكة توزيع قوية تضمن توصيل المنتجات طازجة إلى جميع العملاء.</p>
+                        <h4 class="stat-number" data-target="55" data-suffix="+">0+</h4>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-visual" aria-hidden="true">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-title">سنوات خبرة</h3>
+                        <p class="stat-description">أكثر من ثلاثة عقود من الخبرة في تطوير وإنتاج حلول غذائية عالية الجودة تجمع بين الأصالة والمعايير الحديثة.</p>
+                        <h4 class="stat-number" data-target="30" data-suffix="+">0+</h4>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-visual" aria-hidden="true">
+                        <div class="stat-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="stat-title">نسبة رضا العملاء</h3>
+                        <p class="stat-description">نحافظ على مستوى عالٍ من الجودة والخدمة لضمان تجربة موثوقة تلبي توقعات عملائنا وتفوقها باستمرار.</p>
+                        <h4 class="stat-number" data-target="99" data-suffix="%">0%</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">التزامنا بالجودة</h2>
+                <div class="title-divider"></div>
+                <p class="section-description">نفخر بالاعتماديات الدولية التي تضمن جودتنا</p>
+            </div>
+            
+            <div class="certifications-grid">
+                <div class="cert-item">
+                    <div class="cert-image">
+                        <img src="certificates/IMG-20260509-WA0015.jpg" alt="ISO 22000">
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3>ISO 22000</h3>
+                        <p>معايير إدارة سلامة الغذاء</p>
+                    </div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-image">
+                        <img src="certificates/download.png" alt="Halal Certification">
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3>Halal Certified</h3>
+                        <p>إدارة الجودة</p>
+                    </div>
+                </div>
+                
+                <div class="cert-item">
+                    <div class="cert-image">
+                        <img src="certificates/IMG-20260509-WA0017.jpg" alt="GMP">
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3>GMP</h3>
+                        <p>ممارسات التصنيع الجيدة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="section careers" id="careers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">انضم إلى فريقنا</h2>
+                <div class="title-divider"></div>
+                <p class="section-description">نبحث عن المواهب لنشكيل مستقبل الغذاء الفلسطيني الفاخر</p>
+            </div>
+            
+            <form class="careers-form" id="careersForm">
+                <div class="form-grid">
+                    <!-- Row 1: Full Name & Address -->
+                    <div class="form-group form-col-2">
+                        <label for="fullName" class="form-label">الاسم الكامل *</label>
+                        <input type="text" id="fullName" name="fullName" class="form-input" placeholder="أدخل اسمك الكامل" required>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group form-col-2">
+                        <label for="address" class="form-label">العنوان *</label>
+                        <input type="text" id="address" name="address" class="form-input" placeholder="المدينة / المنطقة" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <!-- Row 2: Job Type & Phone -->
+                    <div class="form-group form-col-2">
+                        <label for="jobType" class="form-label">نوع الوظيفة *</label>
+                        <select id="jobType" name="jobType" class="form-input" required>
+                            <option value="">-- اختر نوع الوظيفة --</option>
+                            <option value="production">الإنتاج</option>
+                            <option value="sales">المبيعات والتسويق</option>
+                            <option value="logistics">اللوجستيات والتوزيع</option>
+                            <option value="quality">ضمان الجودة</option>
+                            <option value="hr">الموارد البشرية</option>
+                            <option value="it">تكنولوجيا المعلومات</option>
+                            <option value="administration">الإدارة</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group form-col-2">
+                        <label for="phone" class="form-label">رقم الهاتف *</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="+972-XXXXXXXXX" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <!-- Row 3: Email & Full Width -->
+                    <div class="form-group form-col-2">
+                        <label for="email" class="form-label">البريد الإلكتروني *</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="example@email.com" required>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <!-- File Uploads -->
+                    <div class="form-group form-col-full">
+                        <label class="form-label">الملفات المطلوبة</label>
+                        <div class="upload-section">
+                            <!-- CV Upload -->
+                            <div class="upload-box">
+                                <input type="file" id="cv" name="cv" class="file-input" accept=".pdf,.doc,.docx" required>
+                                <div class="upload-area" data-upload="cv">
+                                    <div class="upload-icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </div>
+                                    <h4>السيرة الذاتية</h4>
+                                    <p>اسحب الملف هنا أو انقر للاختيار</p>
+                                    <span class="file-info">PDF, DOC, DOCX</span>
+                                </div>
+                                <div class="file-preview" id="cvPreview"></div>
+                                <span class="error-message"></span>
+                            </div>
+
+                            <!-- Photo Upload -->
+                            <div class="upload-box">
+                                <input type="file" id="photo" name="photo" class="file-input" accept=".jpg,.jpeg,.png,.webp" required>
+                                <div class="upload-area" data-upload="photo">
+                                    <div class="upload-icon">
+                                        <i class="fas fa-image"></i>
+                                    </div>
+                                    <h4>صورة شخصية</h4>
+                                    <p>اسحب الصورة هنا أو انقر للاختيار</p>
+                                    <span class="file-info">JPG, PNG, WebP</span>
+                                </div>
+                                <div class="file-preview" id="photoPreview"></div>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Requirements -->
+                    <div class="form-group form-col-full">
+                        <label class="form-label">متطلبات النموذج</label>
+                        <div class="requirements-list">
+                            <div class="requirement-item">
+                                <input type="checkbox" id="req1" class="requirement-check">
+                                <label for="req1">أوافق على <a href="#">سياسة الخصوصية</a> و<a href="#">شروط الاستخدام</a></label>
+                            </div>
+                            <div class="requirement-item">
+                                <input type="checkbox" id="req2" class="requirement-check">
+                                <label for="req2">أؤكد أن المعلومات المقدمة صحيحة وكاملة</label>
+                            </div>
+                            <div class="requirement-item">
+                                <input type="checkbox" id="req3" class="requirement-check">
+                                <label for="req3">أوافق على التواصل معي على البيانات المذكورة أعلاه</label>
+                            </div>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <i class="fas fa-paper-plane"></i> أرسل طلب التوظيف
+                    </button>
+                    <button type="reset" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-redo"></i> إعادة تعيين
+                    </button>
+                </div>
+
+                <div class="form-message" id="formMessage"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer - Premium Edition -->
+    <footer class="footer premium-footer">
+        <!-- Top Section with Logo and Description -->
+        <div class="footer-header">
+            <div class="container">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <img src="logo.png" alt="الغزال" class="logo-img">
+                        <div class="brand-name">
+                            <h1>الغزال</h1>
+                            <p>Palestinian Premium Food</p>
+                        </div>
+                    </div>
+                    <p class="brand-tagline">نقدم لك الطعم الأصيل بجودة عالمية منذ اللحظة الأولى</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Column 1: Quick Links -->
+                    <div class="footer-section">
+                        <div class="section-header">
+                            <h3><i class="fas fa-link"></i> روابط سريعة</h3>
+                            <div class="header-line"></div>
+                        </div>
+                        <ul class="footer-list">
+                            <li><a href="#hero">الصفحة الرئيسية</a></li>
+                            <li><a href="#about">من نحن</a></li>
+                            <li><a href="#products">منتجاتنا</a></li>
+                            <li><a href="#recipes">الوصفات</a></li>
+                            <li><a href="#careers">فرص العمل</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: Company Info -->
+                    <div class="footer-section">
+                        <div class="section-header">
+                            <h3><i class="fas fa-building"></i> معلومات الشركة</h3>
+                            <div class="header-line"></div>
+                        </div>
+                        <ul class="footer-list">
+                            <li><a href="#">عن الشركة</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">الأسئلة الشائعة</a></li>
+                            <li><a href="#">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Contact Info -->
+                    <div class="footer-section">
+                        <div class="section-header">
+                            <h3><i class="fas fa-info-circle"></i> تواصل معنا</h3>
+                            <div class="header-line"></div>
+                        </div>
+                        <div class="contact-info-list">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>العنوان</strong>
+                                    <p>فلسطين - رام الله</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <strong>الهاتف</strong>
+                                    <p>+972-XXXXXXX</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>البريد</strong>
+                                    <p>info@alghzal.ps</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 4: Hours & Social -->
+                    <div class="footer-section">
+                        
+                        <div class="social-channels">
+                            <h4>تابعنا على</h4>
+                            <div class="social-icons-premium">
+                                <a href="#" class="social-icon" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-icon" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon" title="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="social-icon" title="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom-premium">
+            <div class="container">
+                <div class="bottom-content">
+                    <p>&copy; 2026 شركة الغزال - جميع الحقوق محفوظة</p>
+                    <p class="designed-by">صُنع بـ <i class="fas fa-heart"></i> من قبل فريق الغزال</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Recipe Modal -->
+    <div class="recipe-modal" id="recipeModal" aria-hidden="true">
+        <div class="recipe-modal-overlay" id="recipeModalOverlay"></div>
+        <div class="recipe-modal-content" role="dialog" aria-modal="true" aria-labelledby="recipeModalTitle">
+            <button class="recipe-modal-close" id="recipeModalClose" aria-label="إغلاق الوصفة">✕</button>
+            <div class="recipe-modal-header">
+                <div class="recipe-modal-image">
+                    <img id="recipeModalImage" src="" alt="" loading="lazy">
+                </div>
+                <div class="recipe-modal-headings">
+                    <h2 id="recipeModalTitle" class="recipe-modal-title"></h2>
+                    <p class="recipe-modal-subtitle">وصفة أصلية بجودة الغزال</p>
+                </div>
+            </div>
+            <div class="recipe-modal-body" id="recipeModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
