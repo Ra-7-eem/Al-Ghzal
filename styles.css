@@ -185,7 +185,7 @@ button {
 }
 
 .navbar.scrolled {
-    top: 0.75rem;
+    top: 0.5rem;
 }
 
 .nav-container {
@@ -234,8 +234,8 @@ button {
 }
 
 .logo-img {
-    width: 65px;
-    height: 58px;
+    width: 70px;
+    height: 60px;
 
     transform: scale(1.25); 
     transform-origin: center center;
@@ -250,7 +250,7 @@ button {
 }
 
 .nav-logo:hover .logo-img {
-    transform: scale(1.45) translateY(-2px); 
+    transform: scale(1.25) translateY(-2px); 
     box-shadow: 0 10px 22px rgba(228, 177, 63, 0.3);
 }
 
@@ -1253,16 +1253,12 @@ button {
 
 .about-paragraph {
     margin-bottom: 1.5rem;
-    font-size: 1.08rem;
     line-height: 1.9;
-    color: var(--text-gray);
-}
-
-.about-paragraph-lead {
     font-size: 1.18rem;
     font-weight: 600;
     color: var(--text-dark);
 }
+
 
 .about-features {
     display: grid;
@@ -2802,16 +2798,17 @@ button {
 }
 
 .stat-icon {
-    width: 132px;
-    height: 132px;
-    border-radius: 28px;
+    background: transparent;
+    border: none;
+    font-size: 6rem; 
+    color: var(--primary-color);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgba(228, 177, 63, 0.3); 
-    color: var(--primary-color); 
-    font-size: 3rem;
-    background: linear-gradient(145deg, rgba(228, 177, 63, 0.1), rgba(228, 177, 63, 0.02));
+    width: auto;
+    height: auto;
+    filter: drop-shadow(0 10px 15px rgba(228, 177, 63, 0.25));
+    transition: transform var(--transition-smooth), filter var(--transition-smooth);
 }
 
 .stat-content {
@@ -2838,7 +2835,7 @@ button {
     margin-bottom: 2rem;
 }
 
-.stat-number {
+/* .stat-number {
     margin-top: auto;
     width: 100%;
     padding-top: 1.4rem;
@@ -2849,6 +2846,30 @@ button {
     line-height: 1;
     letter-spacing: 1px;
     text-shadow: none; 
+} */
+.stat-number {
+    font-family: 'Inter', 'IBM Plex Sans Arabic', sans-serif;
+    
+    font-weight: 900;
+    font-size: clamp(3.5rem, 6vw, 6.5rem);
+    
+    letter-spacing: -3px; 
+    
+    font-variant-numeric: tabular-nums;
+    
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    line-height: 1;
+    margin-top: auto;
+    padding-top: 1.5rem;
+    border-top: 2px solid rgba(228, 177, 63, 0.15);
+}
+
+.stat-card:hover .stat-icon {
+    transform: scale(1.25) translateY(-5px);
+    filter: drop-shadow(0 15px 20px rgba(228, 177, 63, 0.4));
 }
 
 @keyframes statsAura {
@@ -2891,9 +2912,9 @@ button {
     }
 
     .stat-icon {
-        width: 108px;
-        height: 108px;
-        font-size: 2.4rem;
+        font-size: 5rem;
+        width: auto;
+        height: auto;
     }
 
     .stat-title {
@@ -3829,24 +3850,6 @@ button {
 
 /* Mobile (480px) */
 @media (max-width: 480px) {
-    .nav-menu {
-        display: none;
-        position: fixed;
-        top: 70px;
-        right: 0;
-        flex-direction: column;
-        width: 100%;
-        background: rgba(15, 15, 15, 0.95);
-        backdrop-filter: blur(10px);
-        padding: 2rem;
-        gap: 1rem;
-        z-index: 999;
-    }
-    
-    .nav-menu.active {
-        display: flex;
-    }
-    
     .menu-toggle {
         display: flex;
     }
