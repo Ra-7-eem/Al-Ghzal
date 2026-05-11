@@ -34,8 +34,8 @@ menuToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
-navLinks.forEach(link => {
+// Close mobile menu when clicking on any link or CTA button
+document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
     link.addEventListener('click', () => {
         menuToggle.classList.remove('active');
         navMenu.classList.remove('active');
@@ -131,10 +131,10 @@ function animateCounter(element) {
         current += increment;
         
         if (current >= target) {
-            element.textContent = `${target}${suffix}`;
+            element.textContent = `${suffix}${target}`;
             clearInterval(animation);
         } else {
-            element.textContent = `${Math.floor(current)}${suffix}`;
+            element.textContent = `${suffix}${Math.floor(current)}`;
         }
     }, 16);
 }
@@ -526,16 +526,6 @@ window.addEventListener('resize', () => {
 });
 
 // ========================================
-// Prevent Layout Shift
-// ========================================
-
-// Detect scrollbar width and add to body padding
-const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-if (scrollbarWidth > 0) {
-    document.body.style.paddingRight = scrollbarWidth + 'px';
-}
-
-// ========================================
 // Social Links
 // ========================================
 
@@ -774,7 +764,7 @@ const RECIPES_DATA = {
         title: 'حمص بالطحينة',
         image: 'recipes/IMG-20260509-WA0008.jpg',
         ingredients: [
-            '2 كوب حمص جاهز',
+            '2 كوب حمص جاهز من الغزال',
             '½ كوب طحينة',
             '¼ كوب عصير ليمون طازج',
             '2 فص ثوم',
@@ -797,7 +787,7 @@ const RECIPES_DATA = {
         title: 'فتة متبل الباذنجان',
         image: 'recipes/IMG-20260509-WA0009.jpg',
         ingredients: [
-            '2 كوب متبل باذنجان جاهز',
+            '2 كوب متبل باذنجان جاهز من الغزال',
             '2 كوب لبن زبادي',
             '½ كوب طحينة',
             '¼ كوب عصير ليمون',
